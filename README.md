@@ -1,712 +1,127 @@
-Contribution: 2024-04-07 20:00
+# 🛍 Bootstrap Shopify Theme
 
-Contribution: 2024-04-07 20:01
+A free [**Shopify Theme**](https://github.com/maxvien/bootstrap-shopify-theme) built with [**Bootstrap**](https://getbootstrap.com/), [BEM](http://getbem.com/), [Liquid](https://shopify.github.io/liquid/), [Sass](https://sass-lang.com/), [ESNext](https://en.wikipedia.org/wiki/ECMAScript#ES.Next), [Theme Tools](https://shopify.dev/tools/themes), ... and [Webpack](https://webpack.js.org/).
 
-Contribution: 2024-04-07 20:02
+## Experience
 
-Contribution: 2024-04-07 20:03
+These are my experience when I have been working on this theme:
 
-Contribution: 2024-04-08 20:00
+- Designing & Building [Shopify Themes](https://github.com/maxvien/bootstrap-shopify-theme) from Scratch.
+- Using [Bootstrap@5](https://getbootstrap.com/) to Create a Nice User Interface.
+- Using [BEM Methodology](http://getbem.com/) to Create Minimal, Reusable Source Code.
+- Using [Liquid](https://shopify.github.io/liquid/), [SASS](https://sass-lang.com/), [ESNext](https://en.wikipedia.org/wiki/ECMAScript#ES.Next) to Develop the Theme Fashionably.
+- Using [Shopify Theme Scripts](https://github.com/Shopify/theme-scripts) to Solve Theme Problems Faster.
+- Using [Shopify Metafield](https://shopify.dev/docs/admin-api/rest/reference/metafield) to Add Extra Information to Other Resources.
+- Using [Swiper](https://swiperjs.com/) to Create Beautiful, Touchable, Responsive Sliders.
+- Using [CSS Media Queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) to Create a Mobile-First and Responsive Design.
+- Using [Shopify Theme CLI](https://shopify.dev/themes/tools/cli) to Develop and Deploy the Theme.
+- Using [PostCSS](https://postcss.org/) to Make CSS Code Compatible with Old Browsers.
+- Using [CoreJS](https://github.com/zloirock/core-js) to Make JavaScript Code Compatible with Old Browsers.
+- Using [Webpack Encore](https://github.com/symfony/webpack-encore) to Bundle all SCSS, JavaScript, Font, Image, ... Assets.
+- Using [Shopify Theme Check](https://shopify.dev/themes/tools/theme-check), [ESlint](https://eslint.org/), [Stylelint](https://stylelint.io/), [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) to Follow Theme Best Practices.
 
-Contribution: 2024-04-08 20:01
+If you like this project, hit the **STAR** button to bookmark it ⭐️
 
-Contribution: 2024-04-08 20:02
+## Demonstration
 
-Contribution: 2024-04-08 20:03
+- **Store Link**: https://maxvien-bootstrap.myshopify.com
+- **Store Password**: `maxvien`
 
-Contribution: 2024-04-08 20:04
+## Installation
 
-Contribution: 2024-04-08 20:05
+Clone the source code into your computer.
 
-Contribution: 2024-04-08 20:06
+```bash
+git clone https://github.com/Maxvien/bootstrap-shopify-theme.git
+```
 
-Contribution: 2024-04-09 20:00
+Install the project's dependencies.
 
-Contribution: 2024-04-09 20:01
+```bash
+yarn install
+```
 
-Contribution: 2024-04-09 20:02
+## Usage
 
-Contribution: 2024-04-11 20:00
+First of all, you need to install [Shopify CLI](https://shopify.dev/apps/tools/cli/installation) and login into your online store.
 
-Contribution: 2024-04-11 20:01
+```bash
+shopify login --store=your-store.myshopify.com
+```
 
-Contribution: 2024-04-11 20:02
+Then you can run the below commands to work with the theme.
 
-Contribution: 2024-04-12 20:00
+### Serve
 
-Contribution: 2024-04-12 20:01
+Run `webpack watch` and `serve` the theme in development mode.
 
-Contribution: 2024-04-12 20:02
+```bash
+yarn serve
+```
 
-Contribution: 2024-04-12 20:03
+### Push
 
-Contribution: 2024-04-12 20:04
+Run `webpack build` and `push` the theme to your online store in production mode.
 
-Contribution: 2024-04-12 20:05
+```bash
+yarn push
+```
 
-Contribution: 2024-04-12 20:06
+### Pull
 
-Contribution: 2024-04-12 20:07
+Safely `add` the current project files to the git staging area, then `pull` the theme from your online store, and `clean` untracked asset files.
 
-Contribution: 2024-04-12 20:08
+```bash
+yarn pull
+```
 
-Contribution: 2024-04-12 20:09
+### Test
 
-Contribution: 2024-04-12 20:10
+Run unit `test` with jest and make sure the files are following the project workflow.
 
-Contribution: 2024-04-13 20:00
+```bash
+yarn test
+```
 
-Contribution: 2024-04-13 20:01
+### Lint
 
-Contribution: 2024-04-14 20:00
+Analyze the code to find problems with `shopify theme check`, `eslint`, `stylelint` and `prettier`.
 
-Contribution: 2024-04-14 20:01
+```bash
+yarn lint
+```
 
-Contribution: 2024-04-14 20:02
+Automatically fix problems.
 
-Contribution: 2024-04-14 20:03
+```bash
+yarn fix
+```
 
-Contribution: 2024-04-14 20:04
+## Notes
 
-Contribution: 2024-04-14 20:05
+### Theme Assets
 
-Contribution: 2024-04-14 20:06
+All files inside the `theme/assets` directory are ignored by `git`, except files starting with the `static` keyword in their filename.
 
-Contribution: 2024-04-14 20:07
+### Webpack Encore
 
-Contribution: 2024-04-14 20:08
+[Symfony Webpack Encore](https://symfony.com/doc/current/frontend.html) is a simpler way to integrate Webpack into your application. It wraps Webpack, giving you a clean & powerful API for bundling JavaScript modules, pre-processing CSS & JS and compiling and minifying assets. Encore gives you professional asset system that’s a delight to use.
 
-Contribution: 2024-04-14 20:09
+If you want to use [React](https://symfony.com/doc/current/frontend/encore/reactjs.html) or [Vue](https://symfony.com/doc/current/frontend/encore/vuejs.html) in the theme, you can follow the documentation [here](https://symfony.com/doc/current/frontend.html).
 
-Contribution: 2024-04-14 20:10
+## Visual Studio Code Extensions
 
-Contribution: 2024-04-14 20:11
+To speed up your productivity, you can install these extensions:
 
-Contribution: 2024-04-15 20:00
+- [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+- [Shopify Liquid](https://marketplace.visualstudio.com/items?itemName=Shopify.theme-check-vscode)
+- [IntelliSense for CSS](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
+- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+- [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 
-Contribution: 2024-04-15 20:01
+## Related Projects
 
-Contribution: 2024-04-15 20:02
-
-Contribution: 2024-04-15 20:03
-
-Contribution: 2024-04-15 20:04
-
-Contribution: 2024-04-15 20:05
-
-Contribution: 2024-04-15 20:06
-
-Contribution: 2024-04-15 20:07
-
-Contribution: 2024-04-15 20:08
-
-Contribution: 2024-04-15 20:09
-
-Contribution: 2024-04-15 20:10
-
-Contribution: 2024-04-15 20:11
-
-Contribution: 2024-04-16 20:00
-
-Contribution: 2024-04-16 20:01
-
-Contribution: 2024-04-16 20:02
-
-Contribution: 2024-04-16 20:03
-
-Contribution: 2024-04-16 20:04
-
-Contribution: 2024-04-16 20:05
-
-Contribution: 2024-04-16 20:06
-
-Contribution: 2024-04-17 20:00
-
-Contribution: 2024-04-17 20:01
-
-Contribution: 2024-04-17 20:02
-
-Contribution: 2024-04-17 20:03
-
-Contribution: 2024-04-17 20:04
-
-Contribution: 2024-04-17 20:05
-
-Contribution: 2024-04-19 20:00
-
-Contribution: 2024-04-19 20:01
-
-Contribution: 2024-04-19 20:02
-
-Contribution: 2024-04-19 20:03
-
-Contribution: 2024-04-19 20:04
-
-Contribution: 2024-04-19 20:05
-
-Contribution: 2024-04-19 20:06
-
-Contribution: 2024-04-20 20:00
-
-Contribution: 2024-04-20 20:01
-
-Contribution: 2024-04-20 20:02
-
-Contribution: 2024-04-20 20:03
-
-Contribution: 2024-04-20 20:04
-
-Contribution: 2024-04-20 20:05
-
-Contribution: 2024-04-20 20:06
-
-Contribution: 2024-04-20 20:07
-
-Contribution: 2024-04-20 20:08
-
-Contribution: 2024-04-20 20:09
-
-Contribution: 2024-04-20 20:10
-
-Contribution: 2024-04-20 20:11
-
-Contribution: 2024-04-22 20:00
-
-Contribution: 2024-04-22 20:01
-
-Contribution: 2024-04-22 20:02
-
-Contribution: 2024-04-22 20:03
-
-Contribution: 2024-04-22 20:04
-
-Contribution: 2024-04-22 20:05
-
-Contribution: 2024-04-22 20:06
-
-Contribution: 2024-04-22 20:07
-
-Contribution: 2024-04-24 20:00
-
-Contribution: 2024-04-25 20:00
-
-Contribution: 2024-04-25 20:01
-
-Contribution: 2024-04-25 20:02
-
-Contribution: 2024-04-25 20:03
-
-Contribution: 2024-04-29 20:00
-
-Contribution: 2024-04-29 20:01
-
-Contribution: 2024-04-29 20:02
-
-Contribution: 2024-04-29 20:03
-
-Contribution: 2024-04-29 20:04
-
-Contribution: 2024-04-29 20:05
-
-Contribution: 2024-04-29 20:06
-
-Contribution: 2024-04-29 20:07
-
-Contribution: 2024-04-29 20:08
-
-Contribution: 2024-04-29 20:09
-
-Contribution: 2024-04-29 20:10
-
-Contribution: 2024-04-29 20:11
-
-Contribution: 2024-05-01 20:00
-
-Contribution: 2024-05-01 20:01
-
-Contribution: 2024-05-01 20:02
-
-Contribution: 2024-05-01 20:03
-
-Contribution: 2024-05-01 20:04
-
-Contribution: 2024-05-01 20:05
-
-Contribution: 2024-05-01 20:06
-
-Contribution: 2024-05-01 20:07
-
-Contribution: 2024-05-01 20:08
-
-Contribution: 2024-05-01 20:09
-
-Contribution: 2024-05-01 20:10
-
-Contribution: 2024-05-01 20:11
-
-Contribution: 2024-05-02 20:00
-
-Contribution: 2024-05-02 20:01
-
-Contribution: 2024-05-02 20:02
-
-Contribution: 2024-05-02 20:03
-
-Contribution: 2024-05-02 20:04
-
-Contribution: 2024-05-02 20:05
-
-Contribution: 2024-05-03 20:00
-
-Contribution: 2024-05-03 20:01
-
-Contribution: 2024-05-03 20:02
-
-Contribution: 2024-05-04 20:00
-
-Contribution: 2024-05-04 20:01
-
-Contribution: 2024-05-08 20:00
-
-Contribution: 2024-05-08 20:01
-
-Contribution: 2024-05-08 20:02
-
-Contribution: 2024-05-08 20:03
-
-Contribution: 2024-05-08 20:04
-
-Contribution: 2024-05-08 20:05
-
-Contribution: 2024-05-08 20:06
-
-Contribution: 2024-05-08 20:07
-
-Contribution: 2024-05-08 20:08
-
-Contribution: 2024-05-08 20:09
-
-Contribution: 2024-05-08 20:10
-
-Contribution: 2024-05-11 20:00
-
-Contribution: 2024-05-11 20:01
-
-Contribution: 2024-05-11 20:02
-
-Contribution: 2024-05-11 20:03
-
-Contribution: 2024-05-11 20:04
-
-Contribution: 2024-05-11 20:05
-
-Contribution: 2024-05-12 20:00
-
-Contribution: 2024-05-12 20:01
-
-Contribution: 2024-05-12 20:02
-
-Contribution: 2024-05-12 20:03
-
-Contribution: 2024-05-12 20:04
-
-Contribution: 2024-05-12 20:05
-
-Contribution: 2024-05-12 20:06
-
-Contribution: 2024-05-12 20:07
-
-Contribution: 2024-05-12 20:08
-
-Contribution: 2024-05-13 20:00
-
-Contribution: 2024-05-13 20:01
-
-Contribution: 2024-05-13 20:02
-
-Contribution: 2024-05-13 20:03
-
-Contribution: 2024-05-13 20:04
-
-Contribution: 2024-05-13 20:05
-
-Contribution: 2024-05-13 20:06
-
-Contribution: 2024-05-14 20:00
-
-Contribution: 2024-05-15 20:00
-
-Contribution: 2024-05-15 20:01
-
-Contribution: 2024-05-15 20:02
-
-Contribution: 2024-05-15 20:03
-
-Contribution: 2024-05-15 20:04
-
-Contribution: 2024-05-15 20:05
-
-Contribution: 2024-05-16 20:00
-
-Contribution: 2024-05-16 20:01
-
-Contribution: 2024-05-16 20:02
-
-Contribution: 2024-05-16 20:03
-
-Contribution: 2024-05-16 20:04
-
-Contribution: 2024-05-16 20:05
-
-Contribution: 2024-05-16 20:06
-
-Contribution: 2024-05-16 20:07
-
-Contribution: 2024-05-16 20:08
-
-Contribution: 2024-05-16 20:09
-
-Contribution: 2024-05-18 20:00
-
-Contribution: 2024-05-18 20:01
-
-Contribution: 2024-05-18 20:02
-
-Contribution: 2024-05-19 20:00
-
-Contribution: 2024-05-21 20:00
-
-Contribution: 2024-05-22 20:00
-
-Contribution: 2024-05-22 20:01
-
-Contribution: 2024-05-22 20:02
-
-Contribution: 2024-05-22 20:03
-
-Contribution: 2024-05-22 20:04
-
-Contribution: 2024-05-22 20:05
-
-Contribution: 2024-05-24 20:00
-
-Contribution: 2024-05-26 20:00
-
-Contribution: 2024-05-26 20:01
-
-Contribution: 2024-05-26 20:02
-
-Contribution: 2024-05-26 20:03
-
-Contribution: 2024-05-26 20:04
-
-Contribution: 2024-05-26 20:05
-
-Contribution: 2024-05-26 20:06
-
-Contribution: 2024-05-26 20:07
-
-Contribution: 2024-05-26 20:08
-
-Contribution: 2024-05-26 20:09
-
-Contribution: 2024-05-30 20:00
-
-Contribution: 2024-05-30 20:01
-
-Contribution: 2024-05-30 20:02
-
-Contribution: 2024-05-30 20:03
-
-Contribution: 2024-05-30 20:04
-
-Contribution: 2024-05-30 20:05
-
-Contribution: 2024-05-30 20:06
-
-Contribution: 2024-05-30 20:07
-
-Contribution: 2024-05-31 20:00
-
-Contribution: 2024-05-31 20:01
-
-Contribution: 2024-05-31 20:02
-
-Contribution: 2024-05-31 20:03
-
-Contribution: 2024-05-31 20:04
-
-Contribution: 2024-05-31 20:05
-
-Contribution: 2024-05-31 20:06
-
-Contribution: 2024-05-31 20:07
-
-Contribution: 2024-05-31 20:08
-
-Contribution: 2024-05-31 20:09
-
-Contribution: 2024-05-31 20:10
-
-Contribution: 2024-06-02 20:00
-
-Contribution: 2024-06-02 20:01
-
-Contribution: 2024-06-02 20:02
-
-Contribution: 2024-06-02 20:03
-
-Contribution: 2024-06-02 20:04
-
-Contribution: 2024-06-03 20:00
-
-Contribution: 2024-06-03 20:01
-
-Contribution: 2024-06-04 20:00
-
-Contribution: 2024-06-04 20:01
-
-Contribution: 2024-06-04 20:02
-
-Contribution: 2024-06-04 20:03
-
-Contribution: 2024-06-05 20:00
-
-Contribution: 2024-06-05 20:01
-
-Contribution: 2024-06-05 20:02
-
-Contribution: 2024-06-05 20:03
-
-Contribution: 2024-06-06 20:00
-
-Contribution: 2024-06-06 20:01
-
-Contribution: 2024-06-06 20:02
-
-Contribution: 2024-06-06 20:03
-
-Contribution: 2024-06-06 20:04
-
-Contribution: 2024-06-06 20:05
-
-Contribution: 2024-06-06 20:06
-
-Contribution: 2024-06-06 20:07
-
-Contribution: 2024-06-06 20:08
-
-Contribution: 2024-06-06 20:09
-
-Contribution: 2024-06-06 20:10
-
-Contribution: 2024-06-07 20:00
-
-Contribution: 2024-06-07 20:01
-
-Contribution: 2024-06-07 20:02
-
-Contribution: 2024-06-07 20:03
-
-Contribution: 2024-06-07 20:04
-
-Contribution: 2024-06-07 20:05
-
-Contribution: 2024-06-07 20:06
-
-Contribution: 2024-06-07 20:07
-
-Contribution: 2024-06-09 20:00
-
-Contribution: 2024-06-09 20:01
-
-Contribution: 2024-06-09 20:02
-
-Contribution: 2024-06-09 20:03
-
-Contribution: 2024-06-09 20:04
-
-Contribution: 2024-06-09 20:05
-
-Contribution: 2024-06-10 20:00
-
-Contribution: 2024-06-10 20:01
-
-Contribution: 2024-06-10 20:02
-
-Contribution: 2024-06-10 20:03
-
-Contribution: 2024-06-10 20:04
-
-Contribution: 2024-06-11 20:00
-
-Contribution: 2024-06-11 20:01
-
-Contribution: 2024-06-11 20:02
-
-Contribution: 2024-06-11 20:03
-
-Contribution: 2024-06-12 20:00
-
-Contribution: 2024-06-12 20:01
-
-Contribution: 2024-06-12 20:02
-
-Contribution: 2024-06-12 20:03
-
-Contribution: 2024-06-12 20:04
-
-Contribution: 2024-06-12 20:05
-
-Contribution: 2024-06-12 20:06
-
-Contribution: 2024-06-12 20:07
-
-Contribution: 2024-06-12 20:08
-
-Contribution: 2024-06-12 20:09
-
-Contribution: 2024-06-12 20:10
-
-Contribution: 2024-06-13 20:00
-
-Contribution: 2024-06-15 20:00
-
-Contribution: 2024-06-15 20:01
-
-Contribution: 2024-06-15 20:02
-
-Contribution: 2024-06-15 20:03
-
-Contribution: 2024-06-17 20:00
-
-Contribution: 2024-06-17 20:01
-
-Contribution: 2024-06-17 20:02
-
-Contribution: 2024-06-17 20:03
-
-Contribution: 2024-06-17 20:04
-
-Contribution: 2024-06-17 20:05
-
-Contribution: 2024-06-17 20:06
-
-Contribution: 2024-06-17 20:07
-
-Contribution: 2024-06-17 20:08
-
-Contribution: 2024-06-17 20:09
-
-Contribution: 2024-06-17 20:10
-
-Contribution: 2024-06-17 20:11
-
-Contribution: 2024-06-18 20:00
-
-Contribution: 2024-06-18 20:01
-
-Contribution: 2024-06-18 20:02
-
-Contribution: 2024-06-18 20:03
-
-Contribution: 2024-06-18 20:04
-
-Contribution: 2024-06-18 20:05
-
-Contribution: 2024-06-18 20:06
-
-Contribution: 2024-06-18 20:07
-
-Contribution: 2024-06-18 20:08
-
-Contribution: 2024-06-18 20:09
-
-Contribution: 2024-06-18 20:10
-
-Contribution: 2024-06-18 20:11
-
-Contribution: 2024-06-19 20:00
-
-Contribution: 2024-06-19 20:01
-
-Contribution: 2024-06-19 20:02
-
-Contribution: 2024-06-19 20:03
-
-Contribution: 2024-06-19 20:04
-
-Contribution: 2024-06-19 20:05
-
-Contribution: 2024-06-19 20:06
-
-Contribution: 2024-06-19 20:07
-
-Contribution: 2024-06-19 20:08
-
-Contribution: 2024-06-19 20:09
-
-Contribution: 2024-06-19 20:10
-
-Contribution: 2024-06-21 20:00
-
-Contribution: 2024-06-21 20:01
-
-Contribution: 2024-06-21 20:02
-
-Contribution: 2024-06-21 20:03
-
-Contribution: 2024-06-21 20:04
-
-Contribution: 2024-06-22 20:00
-
-Contribution: 2024-06-22 20:01
-
-Contribution: 2024-06-22 20:02
-
-Contribution: 2024-06-22 20:03
-
-Contribution: 2024-06-22 20:04
-
-Contribution: 2024-06-22 20:05
-
-Contribution: 2024-06-22 20:06
-
-Contribution: 2024-06-22 20:07
-
-Contribution: 2024-06-22 20:08
-
-Contribution: 2024-06-23 20:00
-
-Contribution: 2024-06-23 20:01
-
-Contribution: 2024-06-23 20:02
-
-Contribution: 2024-06-23 20:03
-
-Contribution: 2024-06-23 20:04
-
-Contribution: 2024-06-24 20:00
-
-Contribution: 2024-06-24 20:01
-
-Contribution: 2024-06-24 20:02
-
-Contribution: 2024-06-24 20:03
-
-Contribution: 2024-06-24 20:04
-
-Contribution: 2024-06-24 20:05
-
-Contribution: 2024-06-24 20:06
-
-Contribution: 2024-06-24 20:07
-
-Contribution: 2024-06-24 20:08
-
-Contribution: 2024-06-24 20:09
-
-Contribution: 2024-06-24 20:10
-
-Contribution: 2024-06-24 20:11
-
+- **[Next Shopify Storefront](https://github.com/Maxvien/next-shopify-storefront)** •  A Shopping Cart built with TypeScript, Tailwind CSS, Headless UI, Next.js, React.js, Shopify Hydrogen React,... and Shopify Storefront GraphQL API.
+- **[Shopify Data Faker](https://github.com/Maxvien/shopify-data-faker)** • A Shopify development tool for generating dummy store data.
